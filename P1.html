@@ -11809,7 +11809,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#importing some useful packages</span>
@@ -11836,7 +11836,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#reading in an image</span>
@@ -11862,11 +11862,11 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[2]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.image.AxesImage at 0x851b9b0&gt;</pre>
+<pre>&lt;matplotlib.image.AxesImage at 0x7f18860&gt;</pre>
 </div>
 
 </div>
@@ -13469,7 +13469,7 @@ mGfWfHgWZQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -13657,7 +13657,7 @@ mGfWfHgWZQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13672,7 +13672,7 @@ mGfWfHgWZQAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -13712,7 +13712,7 @@ mGfWfHgWZQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TODO: Build your pipeline that will draw lane lines on the test_images</span>
@@ -13753,7 +13753,7 @@ mGfWfHgWZQAAAABJRU5ErkJggg==
     <span class="c1">#step4: hough transform w/ line extrapolation method</span>
     <span class="n">line_image</span> <span class="o">=</span> <span class="n">hough_lines2</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">parm</span><span class="p">[</span><span class="s1">&#39;rho&#39;</span><span class="p">],</span> <span class="n">parm</span><span class="p">[</span><span class="s1">&#39;theta&#39;</span><span class="p">],</span> <span class="n">parm</span><span class="p">[</span><span class="s1">&#39;threshold&#39;</span><span class="p">],</span> <span class="n">parm</span><span class="p">[</span><span class="s1">&#39;min_line_len&#39;</span><span class="p">],</span> <span class="n">parm</span><span class="p">[</span><span class="s1">&#39;max_line_gap&#39;</span><span class="p">],</span><span class="n">parm</span><span class="p">[</span><span class="s1">&#39;vertices&#39;</span><span class="p">])</span>
 <span class="c1">#    line_image = hough_lines(mask, parm[&#39;rho&#39;], parm[&#39;theta&#39;], parm[&#39;threshold&#39;], parm[&#39;min_line_len&#39;], parm[&#39;max_line_gap&#39;])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">line_image</span><span class="p">)</span>
+<span class="c1">#    plt.imshow(line_image)</span>
     
     <span class="c1">#step5: draw detected lines on the original image</span>
     <span class="n">final_img</span> <span class="o">=</span> <span class="n">weighted_img</span><span class="p">(</span><span class="n">line_image</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">parm</span><span class="p">[</span><span class="s1">&#39;α&#39;</span><span class="p">],</span> <span class="n">parm</span><span class="p">[</span><span class="s1">&#39;β&#39;</span><span class="p">],</span> <span class="n">parm</span><span class="p">[</span><span class="s1">&#39;λ&#39;</span><span class="p">])</span>
@@ -13763,97 +13763,6 @@ mGfWfHgWZQAAAABJRU5ErkJggg==
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-"
->
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13880,7 +13789,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import everything needed to edit/save/watch video clips</span>
@@ -13895,7 +13804,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
@@ -13906,8 +13815,8 @@ imageio.plugins.ffmpeg.download()</code></pre>
         <span class="s1">&#39;low_threshold&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
         <span class="s1">&#39;high_threshold&#39;</span><span class="p">:</span> <span class="mi">150</span><span class="p">,</span>
         <span class="s1">&#39;ignore_mask_color&#39;</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span>
-<span class="c1">#        &#39;vertices&#39;: np.array([[(0,540),(450, 320), (490, 320), (960,540)]], dtype=np.int32), </span>
-        <span class="s1">&#39;vertices&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[(</span><span class="mi">100</span><span class="p">,</span><span class="mi">660</span><span class="p">),(</span><span class="mi">550</span><span class="p">,</span> <span class="mi">450</span><span class="p">),</span> <span class="p">(</span><span class="mi">700</span><span class="p">,</span> <span class="mi">450</span><span class="p">),</span> <span class="p">(</span><span class="mi">1200</span><span class="p">,</span><span class="mi">660</span><span class="p">)]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">),</span> <span class="c1"># for challenge video only</span>
+        <span class="s1">&#39;vertices&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[(</span><span class="mi">0</span><span class="p">,</span><span class="mi">540</span><span class="p">),(</span><span class="mi">450</span><span class="p">,</span> <span class="mi">320</span><span class="p">),</span> <span class="p">(</span><span class="mi">490</span><span class="p">,</span> <span class="mi">320</span><span class="p">),</span> <span class="p">(</span><span class="mi">960</span><span class="p">,</span><span class="mi">540</span><span class="p">)]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">),</span> 
+<span class="c1">#        &#39;vertices&#39;: np.array([[(100,660),(550, 450), (700, 450), (1200,660)]], dtype=np.int32), # for challenge video only</span>
         <span class="s1">&#39;rho&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>              <span class="c1"># distance resolution in pixels of the Hough grid</span>
         <span class="s1">&#39;theta&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">180</span><span class="p">,</span>    <span class="c1"># angular resolution in radians of the Hough grid</span>
         <span class="s1">&#39;threshold&#39;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>       <span class="c1"># minimum number of votes (intersections in Hough grid cell)</span>
@@ -13965,7 +13874,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">white_output</span> <span class="o">=</span> <span class="s1">&#39;test_videos_output/solidWhiteRight.mp4&#39;</span>
@@ -13997,7 +13906,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|███████████████████████████████████████▊| 221/222 [00:12&lt;00:00, 17.81it/s]
+<pre>100%|███████████████████████████████████████▊| 221/222 [00:11&lt;00:00, 19.11it/s]
 </pre>
 </div>
 </div>
@@ -14007,7 +13916,7 @@ imageio.plugins.ffmpeg.download()</code></pre>
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: test_videos_output/solidWhiteRight.mp4 
 
-Wall time: 14.3 s
+Wall time: 13.5 s
 </pre>
 </div>
 </div>
@@ -14028,7 +13937,7 @@ Wall time: 14.3 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -14046,7 +13955,7 @@ Wall time: 14.3 s
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
@@ -14085,7 +13994,7 @@ Wall time: 14.3 s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">yellow_output</span> <span class="o">=</span> <span class="s1">&#39;test_videos_output/solidYellowLeft.mp4&#39;</span>
@@ -14117,7 +14026,7 @@ Wall time: 14.3 s
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>100%|███████████████████████████████████████▉| 681/682 [00:41&lt;00:00, 16.30it/s]
+<pre>100%|███████████████████████████████████████▉| 681/682 [00:44&lt;00:00, 16.34it/s]
 </pre>
 </div>
 </div>
@@ -14127,7 +14036,7 @@ Wall time: 14.3 s
 <pre>[MoviePy] Done.
 [MoviePy] &gt;&gt;&gt;&gt; Video ready: test_videos_output/solidYellowLeft.mp4 
 
-Wall time: 43.6 s
+Wall time: 45.9 s
 </pre>
 </div>
 </div>
@@ -15548,7 +15457,7 @@ rkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
@@ -15566,7 +15475,7 @@ rkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[27]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
